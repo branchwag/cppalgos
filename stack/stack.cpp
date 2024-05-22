@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <string>
 using namespace std;
 
 int main(){
@@ -7,9 +8,11 @@ int main(){
 
     plates.push("plate1");
     plates.push("plate2");
-    plates.push("plates3");
-
-    cout << plates.top();
+    plates.push("plate3");
+    std::cout << "Size of stack: " << plates.size() << std::endl;
+    std::cout << plates.top();
+    plates.pop();
+    std::cout << plates.top();
 
     return 0;
 }
